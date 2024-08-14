@@ -1,0 +1,87 @@
+/* style1.css */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #ecf0f1;
+}
+
+.card h2 {
+    color: #2c3e50;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #7f8c8d;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card:nth-child(odd) {
+    border-top: 5px solid #e67e22;
+}
+
+.card:nth-child(even) {
+    border-top: 5px solid #3498db;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+/* Additional CSS for images in cards */
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+
